@@ -20,6 +20,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
-        context: .
+        context: ./node-backend  
+        file: ./node-backend/Dockerfile 
         push: true
         tags: akshay8968/ecs-node-app:latest
